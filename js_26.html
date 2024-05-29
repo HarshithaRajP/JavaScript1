@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center>NESTED SWITCH STATEMENT EXAMPLE</center></h1>
+
+    <p nested switch example></p>
+    <script>
+          var num1=prompt("enter first value") ; 
+          var num2=prompt("enter second value") ; 
+
+          var operation=prompt("enter the arithmatic operation to be performed","multiplication or division");
+
+          switch(operation){
+            case "multiplication":
+            document.write("multiplication Result:" +eval(num1 * num2));
+            break;
+            case "division":
+                var type=prompt("do you want remainder or quotient","quotient or remainder");
+
+                switch(type){
+                case"remainder":
+                documnet.write("reamainder result is:" + eval(nam1 % num2));
+                case"quotient":
+                document.write("quotient result is:" +eval(num1 / num2));
+                break;
+                }
+          
+          break;
+          default:
+            document.write("please enter the correct format these are case sensitive")
+          }
+    </script>
+</body>
+</html>

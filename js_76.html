@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center>loops in Array</center></h1>
+    <script>
+           let num =[2,4,5,6,9,12,10,11,2,15];
+
+        //    for(let i=0;i<num.length;i++){
+        //     console.log(num[i]);
+        //    }
+
+        // ForEach Loop:calls a function once for each element
+
+        // num.forEach((Element) => {
+        //     return console.log(Element * Element)
+        // })
+        // console.log(num)
+
+        // array.from():used to create another array from any other object
+
+        // let name ="prajwal";
+        // let arr = Array.from(name);
+
+        // console.log(arr);
+
+       //for......of
+        //   for(let item of num){
+        //     console.log(item)
+        //   }
+        // //   for.....in
+
+        // for(let i in num){
+        //     // console.log(num)
+        //     console.log(num[i])
+        // }
+         
+        let array =[45,22,21]
+
+        let a = array.map((value)=>{
+            // console.log(value)
+            return value+1
+        })
+        console.log(a)
+
+        
+        // let b = array.map((value,index)=>{
+        //     console.log(value,index)
+        //     console.log(value)
+        //     return value+1
+        // })
+        // console.log(b)
+
+        // let c= array.map((value,index,array)=>{
+        //     console.log(value,index,array)
+        //     console.log(value)
+        //     return value+1
+        // })
+        // console.log(c)
+
+        //   let a = array.map((value,index,array)=>{
+        //   return value+index
+        // })
+        // console.log(a)
+          
+// =========================================================================================
+
+        //  Filter in arrays: Filter an array with values that passes a test,creates a new array.
+
+        // let a2=[10,15,20,25,30,35,40,45,50,60,65];
+
+        // let a3 = a2.filter((x)=> {
+        //     return (x%5==0 && x%10==0);
+        // });
+        // console.log(a3);
+
+        // Reduce in Array:Reduces an array to a single value
+        let a4 =[23,11,15,10,9,7,8,5]
+
+        let a5=a4.reduce((a,b) =>{
+            return a+b
+        })
+        console.log(a5)
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+</head>
+<!-- <body  onload="checkCookies()"> -->
+
+    <!-- <h2>Javascript HTML evemts</h2>
+
+    <p id="demo"></p>
+    <script>
+        function checkCookies(){
+        var text = "";
+        if(navigator.cookieEnabled === true){
+            text = "Cookies are enabled.";
+        } else {
+            text = "Cookies are not enabled";
+        }
+        document.getElementById("demo").innerHTML = text;
+        }
+    </script> -->
+      
+    <!-- onchange -->
+
+    <!-- <h2>Javascript HTML Events</h2>
+
+        Enter your name:<input type="text" id="fname" onchange="upperCase()">
+        <p>When you leave the input field, a function is trigered which transform the input text to upper case.</p>
+    
+         <script>
+            function upperCase() {
+                const x = document.getElementById("fname");
+                x.value = x.value.toUpperCase();
+                 }
+         </script> -->
+
+
+         <!-- onmouseover & onmouseout -->
+               <!-- <body> -->
+
+                <!-- <div onmouseover="mOver(this)" onmouseout=" mOut(this)" class="btn btn-primary"
+                style="background-color: blue;
+                width: 500px;
+                height:100px;
+                padding:40px;">
+                    
+     </div>
+     <script>
+        function mOver(obj){
+            obj.innerHTML = "Thank you";
+        }
+
+        function mOut (obj){
+            obj.innerHTML = "Mouse Over ME"
+        }
+     </script>
+                 -->
+
+                 <!-- onmousedown & onmouseup -->
+                 <body>
+
+                    <div onmousedown="mDown(this)"
+                        onmouseup="mUp(this)"
+                        style="
+                        background-color: chartreuse;
+                        width: 200px;
+                        height: 100px;
+                        padding:40px;"
+                        >Click Me</div>
+
+                       
+                        <script>
+                            function mDown(obj){
+                                obj.style.backgroundColor = "blue";
+                                obj.innerHTML ="Release ME";
+                            }
+                            function mUp(obj){
+                                obj.style.backgroundColor = "green";
+                                obj.innerHTML ="Thank you";
+                            }
+                        </script>
+                    
+                
+
+              
+</body>
+</html>

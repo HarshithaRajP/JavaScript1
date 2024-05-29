@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <ul id="mylist">
+        <li>coffe</li>
+        <li>tea</li>
+     </ul>
+
+     <p>Click "Append" to append an item to the end of thelist:</p>
+
+     <button onclick="myFunction()">Append</button>
+
+     <script>
+        function myFunction(){
+            // create an "li" node:
+            const node = document.createElement("li");
+
+            //create a text noode;
+            const textnode = document.createTextNode("water");
+
+            //Append the text node to the "li " node:
+            node.appendChild(textnode);
+
+            //append the "li" node to the list;
+            document.getElementById("mylist").appendChild(node);
+        }
+     </script>
+</body>
+</html>

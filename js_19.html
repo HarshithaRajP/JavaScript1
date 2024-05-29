@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center>to check whether the number is divisible by 2 or 5</center></h1>
+    <script>
+        var num1=prompt("Enter the number");
+        num2 =parseInt(num1);
+
+        if(num2>1 || num2>4){
+
+            if(num2 % 2==0 && num2 % 5==0){
+            alert("the number is divisible by 2 and 5")
+             }
+           else if(num2 % 2==0){
+           alert("the number is only divisible by 2")
+           }
+           else if(num2% 5==0)
+        {
+            alert("the numebr is only divisible by 5")
+           }
+        
+           else{
+            alert("the number is not divisible by 2 and 5")
+           }
+        }  
+    </script>
+</body>
+</html>
